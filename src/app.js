@@ -17,10 +17,12 @@ app.use(express.json());
 
 // Router integration
 const products = require('./routes/ProductsApi/productsRoute');
+const giveReview = require('./routes/GiveReviewRoute/GiveReviewRoute')
 
 
 // calling Router
 app.use(products);
+app.use(giveReview);
 
 
 
