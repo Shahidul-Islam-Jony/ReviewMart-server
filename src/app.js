@@ -7,6 +7,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "https://review-mart.web.app",
+      "https://review-mart.firebaseapp.com"
     ],
     credentials: true,
   })
