@@ -14,7 +14,7 @@ const getConnectionURI = () => {
 const connectDB = async () => {
   console.log("Connecting to database....");
   const uri = getConnectionURI(); //calling mongodb uri
-  await mongoose.connect(uri, { dbName: "Users" });
+  await mongoose.connect(uri, { dbName: "ReviewMart" });
   console.log("Connected to database");
 };
 
